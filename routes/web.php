@@ -17,6 +17,7 @@ Route::get('/', [
 ]);
 
 
+Route::group(['prefix' => 'user'], function(){    
 Route::get('/signup', [
     'uses' => 'UserController@getSignup',
     'as' => 'user.signup'
@@ -41,9 +42,15 @@ Route::post('/signin', [
 ]);
 
 
-Route::get('user/profile',[
+Route::get('/profile',[
     'uses' => 'UserController@getProfile',
     'as' => 'user.profile'
 ]);
 
+Route::get('/logout', [
+    'uses' => 'UserController@getLogout',
+    'as' => 'user.logout'
+]);
+
+});
 
