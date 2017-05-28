@@ -20,7 +20,7 @@
                     <ul class="dropdown-menu">
                         <li><a href="{{ route('user.signup')}}">Mendaftar</a></li>
                         <li role="separator" class="divider"></li>
-                        <li><a href="#"> Masuk </a></li>
+                        <li><a href="{{route('user.signin')}}"> Masuk </a></li>
                     </ul>
                 </li>
             </ul>
