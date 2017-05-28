@@ -19,8 +19,10 @@
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="fa fa-user" aria-hidden="true"></i> Akun <span class="caret"></span></a>
                     <ul class="dropdown-menu">
                         <li><a href="{{ route('user.signup')}}">Mendaftar</a></li>
+                         <li><a href="{{route('user.signin')}}"> Masuk </a></li>
                         <li role="separator" class="divider"></li>
-                        <li><a href="{{route('user.signin')}}"> Masuk </a></li>
+                        <li><a href="{{route('user.logout')}}"> Keluar </a></li>          
+
                     </ul>
                 </li>
             </ul>
